@@ -12,7 +12,13 @@
       User data can be automatically synced with Chrome sync (using storage.sync).
 
 - 📫 Adding any Link creates a Link Element with its clickable URL(that takes us to the Page), a Copy Button to copy the URL in clipboard, and a Remove Button to Delete that Link.  
-
+<p align="center">
+      <h3 align="center">LinkStoreR Look</h3>
+      <hr>
+      <p align="center"><img align="center" src="https://drive.google.com/uc?export=view&id=1aLkDv1I_Jd63hxOJr8LZiHDJlhGSRrpd" width="70%" marginleft="15%"/></p>
+      <p align="center"><img align="center" src="https://drive.google.com/uc?export=view&id=1m61zA9SSgGfbRZmqXrw8FTb9-ZhYR9QP" width="70%" /></p>
+      <p align="center"><img align="center" src="https://drive.google.com/uc?export=view&id=1U-YAkWuRtXcQbC6cGWYvZo8atD-kkWo6" width="70%" /></p>
+</p>
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
