@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>LinkR</title>
+
+    <!-- Custom CSS -->
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 8px;
+        }
+        .container{
+            margin: 2px auto 10px auto;
+            width: 400px;
+            font-family: 'Open Sans', sans-serif;
+            height:fit-content;
+        }
+        header{
+            padding: 1em 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+        }
+        header h1{
+            flex: 8;
+        }
+        header h1 img{
+            flex: 2;
+            height: 3em;
+        }
+
+        #input{
+            max-width: 200px;
+            height: 2.4em;
+            font-size: 1em;
+            padding-left: 15px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            flex: 4;
+            margin: 0 1em;
+        }
+        .btn-primary{
+            width: 2em;
+            height: 2.6em;
+            font-size: 1em;
+            border: none;
+            background-color:rgb(34, 1, 223);
+            color: white;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            border-radius: 0.3em;
+            transition: all 200ms ease-in;
+            flex: 3;
+        }
+        .btn-primary:active, .btn-primary:hover{
+            opacity: 0.8;
+        }
+        main{
+            margin-top: 1em;
+        }
+
+        .link{
+            margin: 0.5em 0;
+            display: flex;
+            padding-bottom: 0.8em;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        .linkBtn{
+            padding: 0 0.6em;
+            max-height: 40px;
+            border: none;
+            background-color: rgba(211, 211, 211, 0.849);
+            border-radius: 10px;
+        }
+        .linkBtn:hover, .linkBtn:active{
+            transform: scale(1.05);
+            background-color: rgba(211, 211, 211, 0.4);
+        }
+        
+        .url{
+            font-size: 1.1em;
+            text-decoration: none;
+            margin-left: 10px;
+            color: dodgerblue;
+            flex:14;
+        }
+        .url:hover{
+            text-decoration: underline;
+        }
+        .cancelButton .fas{
+            color: rgb(182, 4, 4);
+            flex: 1;
+        }
+        .cancelButton .fas:hover, .cancelButton .fas:active{
+            color: red;
+            transform: scale(1.2);
+        }
+
+        footer{
+            display: flex;
+            border-top: 1px solid black;
+            padding-top: 0.6em;
+            font-family: 'Open Sans', sans-serif;
+        }
+        footer .btn{
+            width: 12em;
+            height: 2.6em;
+            font-size: 1em;
+            border: none;
+            margin: 0 0 0 auto;
+            background-color:lightslategrey;
+            color: white;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            border-radius: 0.6em;
+            transition: all 200ms ease-in;
+        }
+        footer .fa-copyright{
+            float: left;
+        }
+        footer .btn:active, footer .btn:hover{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 class="page-header">
+                <img src="logo48.png" alt="Logo">    
+                LinkStoreR
+            </h1>
+            <input type="text" class="form-control" placeholder="Enter Link" id="input">
+            <button type="submit" class="btn btn-primary">Add Link</button>
+
+        </header>
+
+        <main>
+            <div class="alert alert-warning text-center" role="alert">
+                <b>Your Link-List is Empty !! Add Links to Get them Here</b>
+            </div>
+            <div class="alert alert-danger text-center" role="alert">
+                <b>Empty Input !! Please Enter a Link.</b>
+            </div>
+            <div class="link-box"></div>
+        </main>
+
+        <footer>
+            <button id="resetBtn" type="submit" class="btn btn-secondary">Reset Link-List</button>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="popindex.js"></script>
+</body>
+</html>
